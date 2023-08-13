@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .3s linear ;
+}
+
+#Purchase{
+height: auto;
+width: 100%;
+background-color: rgb(204, 226, 243); 
+}  
+
+/*navigation bar-start*/
+.nav-bar{
+    text-align:center;
+}
+.nav-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.nav-bar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    margin: 15px;
+    padding: 5px;  
+    
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    color:black;
+    line-height: 20px;
+}
+.nav-bar li a:hover{
+    background-color:rgb(19, 222, 219);
+    width: 100%;
+    color: rgb(183, 48, 48);
+    transition: 0.6s;
+}
+
+.active, .nav-bar li:hover{
+    background: skyblue;
+    border-radius:3px;
+}
+nav {
+    position: fixed;
+    width: calc(100% - 80px);
+    background: rgb(5, 23, 213);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 40px 0 40px;
+    top: 0;
+}
+nav .logo{
+    height: 40px;
+    margin-right: 25px;
+   
+}
+nav img{
+    width: 100px;
+}
+
+#Purchase .container{
+   margin-bottom: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px;
+  min-width: 100vh;
+ background:#BBEAEF ;  
+}
+
+#Purchase .container form{
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0,0,.1);
+}
+
+#Purchase form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#Purchase form .row .col{
+    flex: 1 1 250px;
+}
+
+#Purchase form .row .col .title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+#Purchase form .row .col .Input-Box{
+    margin: 15px 0;    
+}
+
+#Purchase form .row .col .Input-Box span{
+    margin-bottom: 10px;
+    display: block;   
+}
+
+#Purchase form .row .col .Input-Box input{
+    width:100% ;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size:15px ;
+    text-transform: none;
+}
+
+#Purchase .row .col .Input-Box img{
+    width:300px;
+    height: 40px;
+}
+
+#Purchase  form .row .col .Input-Box input:focus{
+    border:1px solid#000 ;
+}
+
+#Purchase .container form .row .col .flex{
+    display: flex;
+    gap: 15px;
+}
+
+#Purchase .container form .row .col .flex .Input-Box{
+    margin-top: 5px;
+}
+
+#Purchase .container form .submit-btn{
+    font-family:sans-serif ;
+    width: 100%;
+    padding: 12px;
+    font-size:17px;
+    background: #30CEDF ;
+    color: white;
+    margin-top: 5px;
+}
+
+#Purchase .container form .submit-btn:hover{
+    background:#24BCE7 ;
+    background-size: cover;
+}
+
+#Purchase .Donate h2{
+     text-decoration: underline;
+     font-size: 40px;
+     color: white;
+}
+#Purchase .Donate img {
+    width:800px;
+    height:300px;
+
+}
+
+
+@media screen and (max-width: 1180px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

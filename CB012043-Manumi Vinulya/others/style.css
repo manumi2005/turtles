@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+   /* font-family:Century Gothic; */
+}
+#Others {
+    background-repeat: no-repeat;
+    /*position: relative;*/
+    background-image: url("..//Images/Home.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.content_area {
+    overflow: hidden;
+}
+
+/*main-title*/
+#Others .title-box {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    margin-top: 0;
+}
+
+#Others .title-box h1 {
+    font-size: 60px;
+    font-family: Century Gothic;
+    font-style: italic;
+    /*margin-bottom: 100px;*/
+    word-spacing: 5px;
+    color: white;
+    text-align: center;
+}
+
+/*navigation bar-start*/
+.nav-bar{
+    text-align:center;
+}
+.nav-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.nav-bar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    margin: 15px;
+    padding: 5px;  
+    
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    color:black;
+    line-height: 20px;
+}
+.nav-bar li a:hover{
+    background-color:rgb(19, 222, 219);
+    width: 100%;
+    color: rgb(183, 48, 48);
+    transition: 0.6s;
+}
+
+.active, .nav-bar li:hover{
+    background: skyblue;
+    border-radius:3px;
+}
+nav {
+    position: fixed;
+    background: rgba(0, 190, 248, 0);
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    padding: 0;
+    top: 0;
+}
+nav .logo{
+    height: 40px;
+    margin-right: 25px;
+   
+}
+nav img{
+    width: 100px;
+}
+
+.nav_table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #004f52b4;
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #049faa;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.logo_btn img {
+    width: 100px;
+    margin: 20px 0 0 10px;
+    position: unset;
+    overflow: unset;
+    filter: drop-shadow(3px 3px 5px #003336);
+}
+
+/*images*/
+#Others .img1 img{
+    float: right;
+    padding-top: 40px;
+    width: 50%;
+    height: 400px;
+}
+
+#Others .img2 img{
+    padding-top: 40px;
+    width: 50%;
+    height: 400px;
+}
+
+#Others .text-box {
+    width: 100%;
+    color: #000;
+    text-align:justify;
+    margin: 80px auto 0 auto;
+    font-size: 100px;
+    align-items: center;   
+    margin-top: 60px;
+    word-spacing: 5px;
+    text-align: center;  
+    font-size: 38px;  
+}
+#Others .para_box{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    color: #000;
+    border-radius: 20px;
+    border: 6px solid black;
+    padding: 20px;  
+    text-align: center;
+    width: 1000px;
+    height:360px;
+    font-size: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(234, 240, 253);
+ }
+ #Others .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+
+
+}
+
+#Others .card{
+    background: #7DC3D5;
+    width: 570px;
+    height: 460px;
+    margin: 10px;
+    border-radius: 15px ;
+
+}
+#Others .card-image{
+    background-color:#7DD5C6;
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+
+}
+#Others .card-image-car-1 img{
+   width: 550px;
+   height: 250px;
+   padding: 10px;
+
+}
+#Others .card-image-car-2 img{
+    width: 550px;
+    height: 250px;
+    padding: 10px;
+
+ }
+ #Others .card-1 h2{
+    text-decoration: underline;
+ }
+ #Others .card-2 h2{
+    text-decoration: underline;
+ }
+ #Others .card-1 p{
+padding: 10px;
+ }
+ #Others .card-2 p{
+    padding: 10px;
+ }
+ 
+
+ #Others .card:hover{
+ background-color:#ACB7B5;
+ color: #fff;
+ cursor: pointer;
+ transform: scale(1.033);
+ transition: all 1s ease;
+ }
+
+ #Others .card-info{
+    font-size: 16px;
+    line-height:25px ;
+    margin: 40px 0;
+    font-weight: 400;
+
+ }
+ #Others .card-btn{
+    color: #1f3d47;
+    background: #8fabba;
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 120px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+ }
+
+ /*footer-start*/
+ #Others footer {
+    position: absolute;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+
+#Others .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Others .footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+#Others .footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+#Others .socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+#Others .socials li {
+    margin: 0 10px;
+}
+
+#Others .socials a {
+    text-decoration: none;
+    color: #fff;
+    transition: color.4s ease;
+}
+
+#Others .socials a i {
+    font-size: 1.1rem;
+}
+
+#Others.socials a:hover i {
+    color: aqua;
+}
+
+#Others .footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#Others .footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 1180px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

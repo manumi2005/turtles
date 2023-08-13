@@ -1,0 +1,543 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+#Threats {
+   background-repeat: no-repeat;
+   /*position: relative;*/
+   background-image: url("..//Images/Threats-1.jpeg");
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+}
+
+.content_area {
+   overflow: hidden;
+}
+
+/*main-title*/
+#Threats .title-box {
+   width: 100%;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%, 0);
+   text-align: center;
+   margin-top: 0;
+}
+
+#Threats .title-box h1 {
+   font-size: 60px;
+   font-family: Century Gothic;
+   font-style: italic;
+   /*margin-bottom: 100px;*/
+   word-spacing: 5px;
+   color: white;
+   text-align: center;
+
+}
+/*nav-bar start*/
+.nav-bar {
+   text-align: center;
+}
+
+.nav-bar ul {
+   display: inline-flex;
+   list-style: none;
+   color: #fff;
+}
+
+.nav-bar li {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 120px;
+   margin: 15px;
+   padding: 5px;
+}
+
+.nav-bar li a {
+   text-decoration: none;
+   color: black;
+   line-height: 20px;
+}
+
+.nav-bar li a:hover {
+   background-color: rgb(19, 222, 219);
+   width: 100%;
+   color: rgb(183, 48, 48);
+   transition: 0.6s;
+}
+
+.active,
+.nav-bar li:hover {
+   background: skyblue;
+   border-radius: 3px;
+}
+
+nav {
+   position: fixed;
+   background: rgba(0, 190, 248, 0);
+   width: 100%;
+   display: flex;
+   z-index: 2;
+   align-items: center;
+   padding: 0;
+   top: 0;
+}
+
+nav .logo {
+   height: 40px;
+   margin-right: 25px;
+}
+
+.logo_btn img {
+   width: 100px;
+   margin: 20px 0 0 10px;
+   position: unset;
+   overflow: unset;
+   filter: drop-shadow(3px 3px 5px #003336);
+}
+
+nav img {
+   width: 100px;
+}
+
+.nav_table {
+   width: 100%;
+   margin-top: 20px;
+}
+
+.topnav {
+   overflow: hidden;
+   background-color: #004f52b4;
+   margin: 20px;
+   border-radius: 10px 10px 10px 10px;
+}
+
+.topnav a {
+   float: right;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+
+}
+
+.topnav a:hover {
+   background-color: #ddd;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: #049faa;
+   color: white;
+}
+
+.topnav .icon {
+   display: none;
+}
+/*nav-bar end*/
+
+/* Title  */
+#Threats .text-box {
+   width: 100%;
+   color: #000;
+   text-align: justify;
+   margin: 80px auto 0 auto;
+   font-size: 100px;
+   align-items: center;
+   margin-top: 60px;
+   text-align: center;
+   font-size: 38px;
+}
+
+/*image*/
+#Threats .text-box img {
+   width: 100%;
+   height: 500px;
+}
+
+/*Details about Hikkaduwa Turtle Hatchery*/
+#Threats .Threats-para {
+   margin: 10px 0 40px;
+   font-size: 25px;
+   color: black;
+   font-family: 'Roboto', sans-serif;
+   align-items: center;
+   color: #000;
+   border-radius: 20px;
+   border: 6px solid black;
+   padding: 20px;
+   text-align: center;
+   width: 1000px;
+   height: 300px;
+   font-size: 25px;
+   margin-right: auto;
+   margin-left: auto;
+   background-color: rgb(234, 240, 253);
+}
+
+/*cards*/
+#Threats .container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+#Threats .card {
+   background: #7DC3D5;
+   width: 270px;
+   height: 400px;
+   margin: 10px;
+   border-radius: 15px;
+}
+
+/*cards-images*/
+#Threats .card-image {
+   background-color: #7DA1D5;
+   height: 150px;
+   margin-bottom: 15px;
+   background-size: cover;
+}
+
+#Threats .card-image-car-1 img {
+   width: 270px;
+   height: 150px;
+}
+
+#Threats .card-image-car-2 img {
+   width: 270px;
+   height: 150px;
+
+}
+
+#Threats .card-image-car-3 img {
+   width: 270px;
+   height: 150px;
+}
+
+/*cards-topics*/
+#Threats .card-1 h2 {
+   text-decoration: underline;
+}
+
+#Threats .card-2 h2 {
+   text-decoration: underline;
+}
+
+#Threats .card-3 h2 {
+   text-decoration: underline;
+}
+
+/*card-description*/
+#Threats .card-1 p {
+   padding: 10px;
+}
+
+#Threats .card-2 p {
+   padding: 10px;
+}
+
+#Threats .card-3 p {
+   padding: 10px;
+}
+
+#Threats .card:hover {
+   background-color: rgb(62, 62, 62);
+   color: #fff;
+   cursor: pointer;
+   transform: scale(1.033);
+   transition: all 1s ease;
+}
+
+/*threat 1*/
+#Threats .threat-1 h2 {
+   text-decoration: underline;
+   padding-top: 30px;
+   align-items: center;
+   text-align: center;
+   padding-bottom: 20px;
+   color: #f2f2f2;
+}
+
+#Threats .threat-1 img {
+   width: 25%;
+   height: 300px;
+   padding-left: 40px;
+}
+
+#Threats .threat-1 p {
+   text-align: justify;
+   color: #000;
+   border-top-right-radius: 2px;
+   border: 6px solid black;
+   width: 900px;
+   height: 200px;
+   padding: 20px;
+   margin-top: 20px;
+   font-size: 20px;
+   margin-left: auto;
+   margin-right:auto ;
+   background-color: #f2f2f2;
+}
+
+   #Threats .border1{
+      text-align: justify;
+      color: #000;
+      border-top-right-radius: 2px;
+      border: 6px solid black;
+      width:600px;
+      height: 150px;
+      padding: 20px;
+      margin-top: 10px;
+      font-size: 20px;
+      margin-left: auto;
+      margin-left: auto;
+      background-color: #f2f2f2;
+   }
+
+#Threats .solution-1 h3{
+   font-size: 25px;
+   margin-left: 150px;
+   }
+   
+   #Threats .solution-1 ol{
+      list-style-type: circle;
+   } 
+   
+   #Threats .solution-1 li{
+   margin-left: 30px ;
+   
+   }
+   
+#Threats hr {
+   border: 5px solid#1CA3AA;
+
+}
+
+/*threat-2*/
+#Threats .threat-2 h2 {
+   text-decoration: underline;
+   padding-top: 30px;
+   align-items: center;
+   text-align: center;
+   padding-bottom: 20px;
+   color: #fff;
+}
+
+#Threats .threat-2 img {
+   width: 25%;
+   height: 300px;
+   padding-left: 40px;
+}
+
+#Threats .threat-2 p {
+   text-align: justify;
+   color: #000;
+   border-top-right-radius: 2px;
+   border: 6px solid black;
+   width: 900px;
+   height: 150px;
+   padding: 20px;
+   margin-top: 20px;
+   font-size: 20px;
+   margin-right: 100px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #f2f2f2;
+}
+#Threats .border2{
+   text-align: justify;
+   color: #000;
+   border-top-right-radius: 2px;
+   border: 6px solid black;
+   width:600px;
+   height: 200px;
+   padding: 20px;
+   margin-top: 10px;
+   font-size: 20px;
+   margin-left: auto;
+   margin-left: auto;
+   background-color: #f2f2f2;
+}
+
+#Threats .solutions-2 h3{
+font-size: 25px;
+margin-left: 150px;
+}
+
+#Threats .solutions-2 ol{
+   list-style-type: circle;
+} 
+
+#Threats .solutions-2 li{
+margin-left: 30px ;
+
+}
+
+/*threat-3*/
+#Threats .threat-3 h2 {
+   text-decoration: underline;
+   padding-top: 30px;
+   align-items: center;
+   text-align: center;
+   padding-bottom: 20px;
+   color: #f2f2f2;
+}
+
+#Threats .threat-3 img {
+   width: 25%;
+   height: 300px;
+   padding-left: 40px;
+}
+
+#Threats .threat-3 p {
+   background-color: #fff;
+   text-align: justify;
+   color: #000;
+   border-top-right-radius: 2px;
+   border: 6px solid black;
+   width: 900px;
+   height: 100px;
+   padding: 20px;
+   margin-top: 20px;
+   font-size: 20px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#Threats .border3{
+   text-align: justify;
+   color: #000;
+   border-top-right-radius: 2px;
+   border: 6px solid black;
+   width:600px;
+   height: 250px;
+   padding: 20px;
+   margin-top: 10px;
+   font-size: 20px;
+   margin-left: auto;
+   margin-left: auto;
+   background-color: #f2f2f2;
+}
+
+#Threats .solutions-3 h3{
+font-size: 25px;
+margin-left: 150px;
+
+}
+
+#Threats .solutions-3 ol{
+   list-style-type: circle;
+} 
+
+#Threats .solutions-3 li{
+margin-left: 30px ;
+
+}
+/*footer-start*/
+#Threats footer {
+   position: absolute;
+   background: #111;
+   height: auto;
+   width: 100vw;
+   font-family: "Open Sans";
+   padding-top: 40px;
+   color: #fff;
+}
+
+#Threats .footer-content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+#Threats .footer-content h3 {
+   font-size: 1.8rem;
+   font-weight: 400;
+   text-transform: capitalize;
+   line-height: 3rem;
+}
+
+#Threats .footer-content p {
+   max-width: 500px;
+   margin: 10px auto;
+   line-height: 28px;
+   font-size: 14px;
+}
+
+#Threats .socials {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0 3rem 0;
+}
+
+#Threats .socials li {
+   margin: 0 10px;
+}
+
+#Threats .socials a {
+   text-decoration: none;
+   color: #fff;
+   transition: color.4s ease;
+}
+
+#Threats .socials a i {
+   font-size: 1.1rem;
+}
+
+#Threats .socials a:hover i {
+   color: aqua;
+}
+
+#Threats .footer-bottom {
+   background: #000;
+   width: 100vw;
+   padding: 20px 0;
+   text-align: center;
+}
+
+#Threats .footer-bottom p {
+   font-size: 14px;
+   word-spacing: 2px;
+   text-transform: capitalize;
+   text-align: center;
+}
+/*footer-end*/
+
+/*media query*/
+@media screen and (max-width: 1180px) {
+   .topnav a:not(:first-child) {
+       display: none;
+   }
+
+   .topnav a.icon {
+       float: right;
+       display: block;
+   }
+}
+
+@media screen and (max-width: 1180px) {
+   .topnav.responsive {
+       position: relative;
+   }
+
+   .topnav.responsive .icon {
+       position: absolute;
+       right: 0;
+       top: 0;
+   }
+   .topnav.responsive a {
+       float: none;
+       display: block;
+       text-align: left;
+   }
+}
+

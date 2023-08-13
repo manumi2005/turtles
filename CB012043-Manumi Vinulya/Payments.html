@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SL TURTLE HATCHARY - Payment Details</title>
+  <link rel="stylesheet" href="Payment.css">
+</head>
+
+<body id="PaymentDetails-Page">
+
+  <!--Cover Page-->
+  <div class="cover-page">
+    <h1>BUY TICKETS</h1>
+    <img src="Images/Home.jpeg" alt="Cover Photo">
+    </div>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li ><a href="Buy-tickets.html">TICKETS</a></li>
+            <li><a href="Details.html">DETAILS </a></li>
+            <li class="active"><a href="Payments.html">PAYMENTS </a></li>
+            <li><a href="Confirmation.html">CONFIRMATION </a></li>
+        </ul>
+        </div>
+
+  <main>
+    <div class="summary">
+      <h2>Summary Table</h2>
+    </div>
+      <div class="summary-table">
+      
+        <table>
+          <tr>
+            <th>Name</th>
+            <td id="fullNameSummary"></td>
+          </tr>
+          <tr>
+            <th>Date</th>
+            <td id="visitDateSummary"></td>
+          </tr>
+          <tr>
+            <th>Time</th>
+            <td id="timeSlotSummary"></td>
+          </tr>
+          <tr>
+            <th>Duration</th>
+            <td id="durationSummary"></td>
+          </tr>
+          <tr>
+            <th>Mobile</th>
+            <td id="mobileNumberSummary"></td>
+          </tr>
+          <tr>
+            <th>email</th>
+            <td id="emailSummary"></td>
+          </tr>
+          <tr>
+            <th>Gender</th>
+            <td id="Gender"></td>
+          </tr>
+
+          <tr>
+            <th>Tickets</th>
+            <th>Charges</th>
+          </tr>
+          <tr>
+            <td><span id="slAdultCount">0</span> SL Adult</td>
+            <td class="charges" id="slAdultSummary">$0</td>
+          </tr>
+          <tr>
+            <td><span id="slChildCount">0</span> SL Child</td>
+            <td class="charges" id="slChildSummary">$0</td>
+          </tr>
+          <tr>
+            <td><span id="foreignerAdultCount">0</span> Foreigner Adult</td>
+            <td class="charges" id="foreignerAdultSummary">$0</td>
+          </tr>
+          <tr>
+            <td><span id="foreignerChildCount">0</span> Foreigner Child</td>
+            <td class="charges" id="foreignerChildSummary">$0</td>    
+          </tr>
+          <tr>
+            <td><span id="infantsCount">0</span> Infants</td>
+            <td class="charges" id="infantsSummary">$0</td>
+          </tr>
+          <tr>
+            <th>Total Payable</th>
+            <td class="charges" id="totalPayableSummary">$0</td>
+          </tr>
+        </table>
+    </div>
+    <div class="detail">
+        <h2>Payment Details</h2>
+    </div>
+   
+    <form>
+      <div class="Name-on-Card">
+        <label for="nameOnCard">Cardholder Name :</label>
+        <input type="text" id="nameOnCard" placeholder="Enter Name on Card" required>
+      </div>
+      <div class="Card-Number">
+        <label for="cardNumber">Card Number :</label>
+        <input type="text" id="cardNumber" placeholder="Enter Card Number" required>  
+        </div>
+      <div class="Expiry-Date">
+        <label for="expiryDate">Expiry Date :</label>
+        <input type="text" id="expiryDate" placeholder="MM/YY" required>
+      </div>
+      <div class="CVC">
+        <label for="cvc">CVC / CVV :</label>
+        <input type="text" id="cvc" placeholder="Enter CVC / CVV" required>
+      </div>
+      <div class="button">
+        <button class="btn-submit" id="Submit" onclick="SubmitPayment()">Submit Payment</button>
+      </div>
+    </form>
+
+<div class="button-1">
+   <a href="Confirmation.html" id="continueBtn">CONTINUE WITH PURCHASE</a>
+  </div>
+
+  </main>
+  <footer>
+    <div class="footer-content">
+        <h3> SL TURTLE HATCHARY</h3>
+        <p>Are you plan to donate turtles and protect turtles we kindly invite you to join with us?</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-squar"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright@ 2023 , SL TURTLE HATCHARY site by Manumi Vinulya</p>
+    </div>
+</footer>
+<script src="payment.js"></script>
+</body>
+</html>
+

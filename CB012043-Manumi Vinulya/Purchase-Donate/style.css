@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#Donate-Purchase{
+    background-repeat: no-repeat;
+    /*position: relative;*/
+    background-image: url("..//Home.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: auto;
+}
+
+nav {
+    position: fixed;
+    background: rgba(0, 190, 248, 0);
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    padding: 0;
+    top: 0;
+}
+
+.nav_table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #004f52b4;
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #049faa;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+.logo_btn img {
+    width: 100px;
+    margin: 20px 0 0 10px;
+    position: unset;
+    overflow: unset;
+    filter: drop-shadow(3px 3px 5px #003336);
+}
+
+#Donate-Purchase .content h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+#Donate-Purchase .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+#Donate-Purchase .content{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0 , 0.25),
+    0 10px 10px rgba(0, 0, 0 , 0.22) ;
+    background: #fff;
+
+}
+
+#Donate-Purchase .content:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0 , 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform:translate(0px,-8px) ;
+}
+
+#Donate-Purchase .content img{
+    width: 200px;
+    height:150px ;
+    text-align:  center;
+    margin: 0 auto;
+    display: block;
+}
+
+#Donate-Purchase p{
+    text-align: center;
+    color:  #BFBFC1;
+}
+
+#Donate-Purchase h6{
+    font-size: 26px;
+    text-align:center ;
+    color: #222f3e;
+    margin: 0;
+}
+
+#Donate-Purchase ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#Donate-Purchase ul li{
+    padding: 5px;
+}
+
+#Donate-Purchase .fa{
+    font-size: 26px;    
+
+}
+
+#Donate-Purchase .checked{
+    color: #ff9f43;
+}
+
+#Donate-Purchase .checked .fa:hover{
+    transform: scale(1.3);
+    transition: 6s ;
+}
+
+#Donate-Purchase button{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(23, 21, 21);
+    width: 100%;
+    padding:15px ;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius:200px ;
+}
+
+
+#Donate-Purchase .buy-1{
+    background: #2183a2;
+}
+
+#Donate-Purchase .buy-2{
+    background: #A837F0;
+}
+
+#Donate-Purchase .buy-3{
+    background: #37F097;
+}
+
+#Donate-Purchase .buy-4{
+    background:  #7919D8;
+}
+
+@media screen and (max-width: 1180px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+/*footer-start*/
+#Donate-Purchase footer {
+    position: absolute;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    margin-top:400px ;
+}
+
+#Donate-Purchase .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Donate-Purchase .footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+#Donate-Purchase .footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+#Donate-Purchase .socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+#Home .socials li {
+    margin: 0 10px;
+}
+
+#Donate-Purchase .socials a {
+    text-decoration: none;
+    color: #fff;
+    transition: color.4s ease;
+}
+
+#Donate-Purchase .socials a i {
+    font-size: 1.1rem;
+}
+
+#Donate-Purchase .socials a:hover i {
+    color: aqua;
+}
+
+#Donate-Purchase .footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#Donate-Purchase .footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/*footer-end*/

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SL TURTLE HATCHARY</title>
+  <link rel="stylesheet" href="Details.css">
+  <link rel="stylesheet" href="international-telephone-input.css">
+  <script src="international-telephone-input.js"></script>
+  </head>
+
+  <body id="Detail-Page">
+
+    <!--Cover Page-->
+    <div class="cover-page">
+        <h1>Buy Tickets</h1>
+        <img src="Images/Home.jpeg" alt="cover-page">
+      </div>
+      <div class="menu-bar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li ><a href="Buy-tickets.html">TICKETS</a></li>
+            <li class="active"><a href="Details.html">DETAILS </a></li>
+            <li ><a href="Payments.html">PAYMENTS </a></li>
+            <li><a href="Confirmation.html">CONFIRMATION </a></li>
+        </ul>
+        </div>
+
+    <main>
+      <!--Summary Table-->
+      <div class="summary">
+        <h2>Summary Table</h2>
+      </div>
+        <div class="summary-table">
+        
+          <table>
+            
+            <tr>
+              <th>Date</th>
+              <td id="visitDateSummary"></td>
+            </tr>
+            <tr>
+              <th>Time</th>
+              <td id="timeSlotSummary"></td>
+            </tr>
+            <tr>
+              <th>Duration</th>
+              <td id="durationSummary"></td>
+            </tr>
+            <tr>
+              <th>Tickets</th>
+              <th>Charges</th>
+            </tr>
+            <tr>
+              <td><span id="slAdultCount">0</span> SL Adult</td>
+              <td class="charges" id="slAdultSummary">$0</td>
+            </tr>
+            <tr>
+              <td><span id="slChildCount">0</span> SL Child</td>
+              <td class="charges" id="slChildSummary">$0</td>
+            </tr>
+            <tr>
+              <td><span id="foreignerAdultCount">0</span> Foreigner Adult</td>
+              <td class="charges" id="foreignerAdultSummary">$0</td>
+            </tr>
+            <tr>
+              <td><span id="foreignerChildCount">0</span> Foreigner Child</td>
+              <td class="charges" id="foreignerChildSummary">$0</td>    
+            </tr>
+            <tr>
+              <td><span id="infantsCount">0</span> Infants</td>
+              <td class="charges" id="infantsSummary">$0</td>
+            </tr>
+            <tr>
+              <th>Total Payable</th>
+              <td class="charges" id="totalPayableSummary">$0</td>
+            </tr>
+          </table>
+      </div>
+
+        <!--Details-->
+         <div class="details">     
+             <h2>Enter Your Details</h2>
+         </div> 
+        <!--Detail form-->
+         <form id="detailsForm">
+
+           <div  class="Name">
+             <label for="fullName">Full Name :</label>
+             <input type="text" id="fullName"  placeholder="Enter Your Name" required>
+           </div>
+
+          <div class="iti">
+             <labal for="mobileNumber" >Mobile Number :</labal>
+             <input type="tel" id=mobileNumber placeholder="Enter Mobile Number" required >
+          </div>
+
+          <div class="Email">
+             <label for="email">Email :</label>
+             <input type="email" id="email"  placeholder="Enter Email" required>
+          </div>
+
+          <div class="Confirmemail">
+              <label for="confirmEmail">Confirm Email :</label>
+              <input type="email" id="confirmEmail"  placeholder="Confirm The Email" required >
+          </div>
+
+          <div class="gender">
+               <label for="gender">Gender :</label>
+            <select id="gender">
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+          </div>
+
+          <div class="button">
+                <button class="btn-add" id="Submit" onclick="AddData()">Add Data</button>
+          </div>
+       </form>
+   </main>
+
+    <hr>
+
+    <!--Detail page summary table-->
+  <section class="summary-section">
+    <div class="col-12">
+          <h2>Summary Table</h2>
+
+    <table id="summaryTable">
+      <tr>
+        <th>Full Name</th>
+        <td id="fullNameSummary"></td>
+      </tr>
+      <tr>
+        <th>Mobile Number</th>
+        <td id="mobileNumberSummary"></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td id="emailSummary"></td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td id="genderSummary"></td>
+      </tr>
+    </table>
+  </div>
+  </section>
+
+<div class="button-2">
+  <a href="Payments.html" id="continueBtn">CONTINUE WITH PURCHASE</a>
+ </div>
+
+   <!--Footer-->
+   <footer>
+    <div class="footer-content">
+        <h3> SL TURTLE HATCHARY</h3>
+        <p>Are you plan to donate turtles and protect turtles we kindly invite you to join with us?</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-squar"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright@ 2023 , SL TURTLE HATCHARY site by Manumi Vinulya</p>
+    </div>
+  </footer>
+
+   <script src="Details.js" ></script>
+
+    
+   </body>
+</html>

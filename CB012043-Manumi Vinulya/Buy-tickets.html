@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SL TURTLE HATCHARY</title>
+  <link rel="stylesheet" href="Buy-tickets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+</head>
+
+<body>
+  <div class="cover-page">
+    <h1>Buy Tickets</h1>
+    <img src="Images/Home.jpeg" alt="cover">
+  </div>
+  
+  <!--Menu-bar-->
+  <div class="menu-bar">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li class="active"><a href="Buy-tickets.html">TICKETS</a></Li>
+        <li><a href="Details.html">DETAILS </a></Li>
+        <li ><a href="Payments.html">PAYMENTS </a></Li>
+        <li><a href="Confirmation.html">CONFIRMATION </a></Li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+   
+    <!--Date-->
+    <div class="dates">
+      <h2>Dates</h2>
+      <input type="date" id="visitDate" required>
+    </div>
+
+    <!--Guests-->
+    <div class="Guest">
+       <h2>Guests</h2>
+       <form>
+      <div class="ticket-category">     
+        <label for="slAdult">SL Adult: </label>
+        <input type="number" id="slAdult" min="0" value="0">
+      </div>
+
+      <div class="ticket-category">
+        <label for="slChild">SL Child: </label>
+        <input type="number" id="slChild" min="0" value="0">
+      </div>
+      <div class="ticket-category">
+        <label for="foreignerAdult">Foreigner Adult: </label>
+        <input type="number" id="foreignerAdult" min="0" value="0">
+      </div>
+      <div class="ticket-category">
+        <label for="foreignerChild">Foreigner Child: </label>
+        <input type="number" id="foreignerChild" min="0" value="0">
+      </div>
+      <div class="ticket-category">
+        <label for="infants">Infants: </label>
+        <input type="number" id="infants" min="0" value="0">
+      </div> 
+    </form> 
+      </div>
+
+    <!--Duration-->
+    <div class="duration">
+        <h2>Duration</h2>
+        <form>
+    <div class="time-slots">
+    <label>
+      <input type="checkbox" name="timeSlot" value="07:00 - 08:00">07:00 am - 08:00 am
+    </label>
+    <label>
+      <input type="checkbox" name="timeSlot" value="08:00 - 09:00">08:00 am - 09:00 am
+    </label>
+    <label>
+      <input type="checkbox" name="timeSlot" value="09:00 - 10:00">09:00 am - 10:00 am
+    </label>
+    <label>
+      <input type="checkbox" name="timeSlot" value="10:00 - 11:00">10:00 am - 11:00 am (Peak)
+    </label>
+    <label>
+      <input type="checkbox" name="timeSlot" value="11:00 - 12:00">11:00 am - 12:00 am (Peak)
+    </label>
+    <label>
+        <input type="checkbox" name="timeSlot" value="12:00 - 01:00">12:00 am - 01:00 pm (Peak)
+    </label>
+    <label>
+      <input type="checkbox" name="timeSlot" value="01:00 - 02:00">01:00 pm - 02:00 pm 
+    </label>
+    <label>
+      <input type="checkbox" name="timeSlot" value="02:00 - 03:00">03:00 pm - 04:00 pm (Peak)
+    </label>
+    <label>
+      <input type="checkbox" name="timeSlot" value="03:00 - 04:00">04:00 pm - 05:00 pm (Peak)
+    </label>
+    <label>
+      <input type="checkbox" name="timeSlot" value="05:00 - 06:00">05:00 pm - 06:00 pm (Peak)
+    </label>
+</div>
+</form>
+</div>
+
+<!--  <option value="10.00 - 11.00">10.00 am - 11.00 am (Peak)</option>
+    <option value="11:00 - 12:00">11:00 am - 12:00 am (Peak)</option>
+    <option value="12:00 - 13:00">12:00 am - 01:00 pm (Peak)</option>
+    <option value="13:00 - 14:00">01:00 pm - 02:00 pm</option>
+    <option value="14:00 - 15:00">02:00 pm - 03:00 pm</option>
+    <option value="15:00 - 16:00">03:00 pm - 04:00 pm (Peak)</option>
+    <option value="16:00 - 17:00">04:00 pm - 05:00 pm (Peak)</option>-->
+  
+ 
+
+      <!--<select id="timeSlot" multiple>
+        <option value="07:00 - 08:00">07:00 am - 08:00 am</option>
+        <option value="08:00 - 09:0">08:00 am - 09:00 am</option>
+        <option value="10.00 - 11.00">10.00 am - 11.00 am (Peak)</option>
+        <option value="11:00 - 12:00">11:00 am - 12:00 am (Peak)</option>
+        <option value="12:00 - 13:00">12:00 am - 01:00 pm (Peak)</option>
+        <option value="13:00 - 14:00">01:00 pm - 02:00 pm</option>
+        <option value="14:00 - 15:00">02:00 pm - 03:00 pm</option>
+        <option value="15:00 - 16:00">03:00 pm - 04:00 pm (Peak)</option>
+        <option value="16:00 - 17:00">04:00 pm - 05:00 pm (Peak)</option>
+      </select>
+      </section>-->
+
+      <!--Pricing  Table-->
+      <div class="prices">
+        <h2>Pricing Table</h2>
+        <div class="pricing-table">
+      <table >
+        <tr>
+          <th>Ticket Category</th>
+          <th>Charge Per Normal Hour</th>
+          <th>Charge Per Peak Hour</th>
+        </tr>
+        <tr>
+          <td>SL Adult</td>
+          <td>$4</td>
+          <td>$6</td>
+        </tr>
+        <tr>
+          <td>SL Child</td>
+          <td>$2</td>
+          <td>$3</td>
+        </tr>
+        <tr>
+          <td>Foreigner Adult</td>
+          <td>$10</td>
+          <td>$13</td>
+        </tr>
+        <tr>
+          <td>Foreigner Child</td>
+          <td>$5</td>
+          <td>$8</td>
+        </tr>
+        <tr>
+          <td>Infants (under 4 years)</td>
+          <td colspan="2">Free</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+    <hr>
+
+
+    <!--Summary Table-->
+    <div class="summary">
+      <h2>Summary Table</h2>
+    </div>
+      <div class="summary-table">
+      
+        <table>
+          
+          <tr>
+            <th>Date</th>
+            <td id="visitDateSummary"></td>
+          </tr>
+          <tr>
+            <th>Time</th>
+            <td id="timeSlotSummary"></td>
+          </tr>
+          <tr>
+            <th>Duration</th>
+            <td id="durationSummary"></td>
+          </tr>
+          <tr>
+            <th>Tickets</th>
+            <th>Charges</th>
+          </tr>
+          <tr>
+            <td><span id="slAdultCount">0</span> SL Adult</td>
+            <td class="charges" id="slAdultSummary">$0</td>
+          </tr>
+          <tr>
+            <td><span id="slChildCount">0</span> SL Child</td>
+            <td class="charges" id="slChildSummary">$0</td>
+          </tr>
+          <tr>
+            <td><span id="foreignerAdultCount">0</span> Foreigner Adult</td>
+            <td class="charges" id="foreignerAdultSummary">$0</td>
+          </tr>
+          <tr>
+            <td><span id="foreignerChildCount">0</span> Foreigner Child</td>
+            <td class="charges" id="foreignerChildSummary">$0</td>    
+          </tr>
+          <tr>
+            <td><span id="infantsCount">0</span> Infants</td>
+            <td class="charges" id="infantsSummary">$0</td>
+          </tr>
+          <tr>
+            <th>Total Payable</th>
+            <td class="charges" id="totalPayableSummary">$0</td>
+          </tr>
+        </table>
+    </div>
+
+    
+
+
+<div class="button-1">
+  <a href="Details.html" id="continueBtn" >CONTINUE WITH PURCHASE</a>
+</div>
+ 
+ 
+  <!--Footer-->
+  <footer>
+    <div class="footer-content">
+        <h3> SL TURTLE HATCHARY</h3>
+        <p>Are you plan to donate turtles and protect turtles we kindly invite you to join with us?</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-squar"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright@ 2023 , SL TURTLE HATCHARY site by Manumi Vinulya</p>
+    </div>
+</footer>
+</div>
+
+<script src="Buy-tickets.js"></script>
+
+</body>
+</html>
